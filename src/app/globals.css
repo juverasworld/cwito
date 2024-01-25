@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: 'SF Pro Display Regular';
+src: url('/font/SF-Pro-Display-Regular.otf') format('opentype');
+
+font-weight: normal;
+font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Work Sans';
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/font/WorkSans-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Inter Regular'), local('Inter-Regular'), url('/font//inter/Inter-Regular.ttf') format('ttf');
+}
+
+
+body {
+/* overflow: hidden; */
+/* font-family: 'Work Sans', sans-serif; */
+
+}
+nav{
+  z-index: 1;
+  background: #fff;
+  font-family: inter;
+  font-weight: 400;
+}
+
