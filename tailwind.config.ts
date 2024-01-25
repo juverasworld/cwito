@@ -12,7 +12,11 @@ const config: Config = {
         sans: ['Work Sans', 'sans-serif'],
         inter: ['inter', 'sans-serif'],
       },
-      
+      backgroundImage: (theme) => ({
+        'heroLg': "url('/imgs/heroBg.png')",
+        'heroSm': "url('/imgs/HeroSm.png')",
+        // Add more background URL utilities as needed
+      }),
     },
   },
   plugins: [],

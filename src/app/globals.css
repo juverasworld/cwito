@@ -8,6 +8,8 @@ src: url('/font/SF-Pro-Display-Regular.otf') format('opentype');
 font-weight: normal;
 font-style: normal;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @font-face {
   font-family: 'Work Sans';
@@ -23,17 +25,52 @@ font-style: normal;
   font-weight: 600;
   src: local('Inter Regular'), local('Inter-Regular'), url('/font//inter/Inter-Regular.ttf') format('ttf');
 }
-
-
-body {
-/* overflow: hidden; */
-/* font-family: 'Work Sans', sans-serif; */
-
-}
 nav{
   z-index: 1;
   background: #fff;
   font-family: inter;
   font-weight: 400;
 }
+.hero{
+ padding: 24px, 32px, 24px, 32px
+}
 
+.containers {
+  position: relative;
+  white-space: nowrap;
+ 
+  /* background: linear-gradient(to right, transparent, transparent 10%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.9) 90%, transparent 90%, transparent); */
+}
+
+.box {
+  /* width:444px;
+  height: 600px; */
+  /* background-color: #3498db; */
+  display: inline-block;
+
+  position: relative;
+  /* Set position to relative */
+}
+
+
+
+
+.button-container {
+  position: absolute;
+  bottom: 30%;
+  right: 0;
+  padding: 8px;
+}
+
+.hello-button {
+  background-color: #00993380;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  width: 136px;
+  border-radius: 1000px;
+  height: 44px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1;
+}
