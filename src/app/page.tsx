@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full relative bg-none lg:bg-heroLg  h-auto  bg-no-repeat bg-cover">
-        <nav className="py-3 fixed border-b-[1px] w-[100%]  z-24 text-[16px] leading-[24px] font-sans ">
+        <nav className="py-3  border-b-[1px] w-[100%]  z-24 text-[16px] leading-[24px] font-sans ">
           <div className="flex w-[100%] items-center justify-between md:px-24  px-2">
             <Link href="/">
               <Image
@@ -95,7 +95,7 @@ export default function Home() {
           </div>
         </nav>
         <div className="">
-          <div className="bg-heroSm lg:bg-none bg-no-repeat bg-cover py-32  ">
+          <div className="bg-heroSm lg:bg-none bg-no-repeat bg-cover  py-32  ">
             <div className=" flex items-center justify-center  flex-col ">
               <div
                 className="font-sans xl:w-[700px] lg:w-[396px]  text-center text-white text-5xl font-semibold
@@ -130,7 +130,7 @@ leading-[42px] flex flex-col items-center justify-center mx-auto "
             </div>
             <div className="w-full bg-[#023436] backdrop-filter backdrop-blur-lg   ">
               <div className="flex justify-center items-center py-12 ">
-                <div className=" grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-x-24 gap-y-6 p-2">
+                <div className=" grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-x-24 gap-y-6 p-2">
                   <div className="">
                     <p
                       className="text-grad 200 text-[38px] font-semibold
@@ -197,7 +197,7 @@ text-[21px] font-normal leading-[27px]"
 
       <div className="bg-emerald-50 bg-opacity-25">
         <div className="flex lg:flex-row flex-col items-center justify-center container mx-auto">
-          <div className="bg-white lg:w-[699px] flex  flex-col h-[709px] w-full mx-5  rounded-[18px] shadow border p-5">
+          <div className="bg-white lg:w-[699px] flex  flex-col h-[720px] w-full mx-5  rounded-[18px] shadow border p-5">
             <Image
               src="/imgs/reg.svg"
               width="5"
@@ -206,7 +206,7 @@ text-[21px] font-normal leading-[27px]"
               className="w-[454.97px] h-[376.39px] "
             />
             <div className=" text-black text-[50px] font-semibold font-sans leading-[40px] tracking-[-6%] my-3">
-              Simple and secure <br className="" /> registration process
+              Simple and secure <br className="lg:flex hidden" /> registration process
             </div>
             <div className="lg:w-[480px] w-full text-neutral-600 text-[18px] font-normal font-sans my-3 leading-[27px]">
               Palette is an enshrined protocol on the network level that enables
@@ -214,7 +214,7 @@ text-[21px] font-normal leading-[27px]"
             </div>
           </div>
           <div className="">
-            <div className=" bg-white my-5  rounded-[18px] shadow border border-gray-200 lg:w-[450px] w-auto lg:p-5 ">
+            <div className=" bg-white my-5 p-5  rounded-[18px] shadow border border-gray-200 lg:w-[386.50px] w-auto lg:p-5 ">
             <div className="right-0 absolute">
                   <Image
                     src="/imgs/payout.svg"
@@ -238,20 +238,20 @@ text-[21px] font-normal leading-[27px]"
               </div>
 </div>
             </div>
-            <div className=" bg-white my-5  rounded-[18px] shadow border border-gray-200 lg:w-[450px] w-auto lg:p-5 ">
-            <div className="right-0 absolute">
+            <div className=" bg-white my-5 p-5 relative rounded-[18px] shadow border border-gray-200 lg:w-[386.50px] w-auto lg:p-5 ">
+            <div className="right-[1px] top-0 absolute">
                   <Image
-                    src="/imgs/payout.svg"
+                    src="/imgs/justTrade.svg"
                     width="5"
                     height="5"
                     alt=""
-                    className="lg:w-[250px] w-[150px] "
+                    className="lg:w-[250px] w-[120px] rounded-r-md"
                   />
                 </div>
 <div className=" pt-32">
 
                 <p className=" w-full lg:w-[341px]  text-black text-[28px] font-semibold my-5 font-sans leading-[22px]">
-                  Payout is faster than normal
+                No hodling, Just trade!
                 </p>
                
               
