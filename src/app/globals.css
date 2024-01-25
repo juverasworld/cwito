@@ -25,20 +25,31 @@ font-style: normal;
   font-weight: 600;
   src: local('Inter Regular'), local('Inter-Regular'), url('/font//inter/Inter-Regular.ttf') format('ttf');
 }
-nav{
+
+nav {
   z-index: 1;
   background: #fff;
   font-family: inter;
   font-weight: 400;
 }
-.hero{
- padding: 24px, 32px, 24px, 32px
+
+.text-grad {
+  background: linear-gradient(to right, #FFFF8D, #CC6984);
+  -webkit-background-clip: text;
+  /* width: w-fit; */
+  color: transparent;
+
+
+}
+
+.hero {
+  padding: 24px, 32px, 24px, 32px
 }
 
 .containers {
   position: relative;
   white-space: nowrap;
- 
+
   /* background: linear-gradient(to right, transparent, transparent 10%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.9) 90%, transparent 90%, transparent); */
 }
 
