@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Nav from "../../components/navbar";
-import Reg from "../../components/reg";
+// import Reg from "../../components/reg";
 
 export default function Home() {
   const [isMenuOpen, setMenuOpen] = useState(false);
