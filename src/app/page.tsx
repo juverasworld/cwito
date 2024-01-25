@@ -95,122 +95,177 @@ export default function Home() {
           </div>
         </nav>
         <div className="">
-
-        <div className="bg-heroSm lg:bg-none bg-no-repeat bg-cover py-32  ">
-          <div className=" flex items-center justify-center  flex-col ">
-            <div
-              className="font-sans xl:w-[700px] lg:w-[396px]  text-center text-white text-5xl font-semibold
+          <div className="bg-heroSm lg:bg-none bg-no-repeat bg-cover py-32  ">
+            <div className=" flex items-center justify-center  flex-col ">
+              <div
+                className="font-sans xl:w-[700px] lg:w-[396px]  text-center text-white text-5xl font-semibold
 leading-[42px] flex flex-col items-center justify-center mx-auto "
-            >
-              <p className="font-sans hero">
-                Your<span className="text-[#5DC1BD]"> one-stop</span>{" "}
-                <br className="" /> shop for crypto <br className="" /> & cash
-              </p>
-            </div>
+              >
+                <p className="font-sans hero">
+                  Your<span className="text-[#5DC1BD]"> one-stop</span>{" "}
+                  <br className="" /> shop for crypto <br className="" /> & cash
+                </p>
+              </div>
 
-            <div className=" font-sans text-[18px] leading-[28pz] lg:w-[490px] text-center p-[2px] my-10  w-[318px] text-zinc-100 text-lg font-normal">
-              At Cwito, we ensure effortless conversion of your cryptocurrencies
-              into naira instantly.
+              <div className=" font-sans text-[18px] leading-[28pz] lg:w-[490px] text-center p-[2px] my-10  w-[318px] text-zinc-100 text-lg font-normal">
+                At Cwito, we ensure effortless conversion of your
+                cryptocurrencies into naira instantly.
+              </div>
+              <div className="w-[259px] h-[60px] p-6 bg-white rounded-lg my-10 justify-center items-center gap-2 inline-flex border-0 ">
+                <div className="justify-center items-center flex">
+                  <Link
+                    href="#"
+                    className="text-center text-teal-950 text-lg font-medium font-sans leading-7"
+                  >
+                    Download Cwito
+                  </Link>
+                </div>
+              </div>
+              <Link
+                href="/"
+                className="text-white text-base font-normal font-sans underline leading-normal"
+              >
+                Create a free account
+              </Link>
             </div>
-            <div className="w-[259px] h-[60px] p-6 bg-white rounded-lg my-10 justify-center items-center gap-2 inline-flex border-0 ">
-              <div className="justify-center items-center flex">
-                <Link href="#" className="text-center text-teal-950 text-lg font-medium font-sans leading-7">
-                  Download Cwito
-                </Link >
+            <div className="w-full bg-[#023436] backdrop-filter backdrop-blur-lg   ">
+              <div className="flex justify-center items-center py-12 ">
+                <div className=" grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-x-24 gap-y-6 p-2">
+                  <div className="">
+                    <p
+                      className="text-grad 200 text-[38px] font-semibold
+font-sans leading-[38px]"
+                    >
+                      23K
+                    </p>
+                    <p
+                      className="font-sans text-stone-300
+text-[21px] font-normal leading-[27px]"
+                    >
+                      Traders Like you
+                    </p>
+                  </div>
+
+                  <div className="">
+                    <p
+                      className="text-grad 200 text-[38px] font-semibold
+font-sans leading-[38px]"
+                    >
+                      2X faster
+                    </p>
+                    <p
+                      className="font-sans text-stone-300
+text-[21px] font-normal leading-[27px]"
+                    >
+                      Payout Time
+                    </p>
+                  </div>
+                  <div className="">
+                    <p
+                      className="text-grad 200 text-[38px] font-semibold
+font-sans leading-[38px]"
+                    >
+                      $17 million
+                    </p>
+                    <p
+                      className="font-sans text-stone-300
+text-[21px] font-normal leading-[27px]"
+                    >
+                      Payout processed
+                    </p>
+                  </div>
+                  <div className="">
+                    <p
+                      className="text-grad 200 text-[38px] font-semibold
+font-sans leading-[38px]"
+                    >
+                      24/7
+                    </p>
+                    <p
+                      className="font-sans text-stone-300
+text-[21px] font-normal leading-[27px]"
+                    >
+                      Support System
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <Link href="/" className="text-white text-base font-normal font-sans underline leading-normal">Create a free account</Link>
           </div>
-          <div className="w-full bg-[#023436] backdrop-filter backdrop-blur-lg   ">
-
-          <div className="flex justify-center items-center py-12 ">
-           <div className=" grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-x-24 gap-y-6 p-2">
-            <div className="">
-              <p
-                className="text-grad 200 text-[38px] font-semibold
-font-sans leading-[38px]"
-              >
-                23K
-              </p>
-              <p
-                className="font-sans text-stone-300
-text-[21px] font-normal leading-[27px]"
-              >
-                Traders Like you
-              </p>
-            </div>
-
-            <div className="">
-              <p
-                className="text-grad 200 text-[38px] font-semibold
-font-sans leading-[38px]"
-              >
-                2X faster
-              </p>
-              <p
-                className="font-sans text-stone-300
-text-[21px] font-normal leading-[27px]"
-              >
-                Payout Time
-              </p>
-            </div>
-            <div className="">
-              <p
-                className="text-grad 200 text-[38px] font-semibold
-font-sans leading-[38px]"
-              >
-                $17 million
-              </p>
-              <p
-                className="font-sans text-stone-300
-text-[21px] font-normal leading-[27px]"
-              >
-                Payout processed
-              </p>
-            </div>
-            <div className="">
-              <p
-                className="text-grad 200 text-[38px] font-semibold
-font-sans leading-[38px]"
-              >
-               24/7
-              </p>
-              <p
-                className="font-sans text-stone-300
-text-[21px] font-normal leading-[27px]"
-              >
-               Support System
-              </p>
-            </div>
-          </div>  
-          </div>
-          </div>
-         
-        </div>
         </div>
       </div>
-     
-     <div className="bg-emerald-50 bg-opacity-25">
-  <div className="flex lg:flex-row flex-col items-center justify-center container mx-auto">
-    <div className="bg-white w-[699px] mx-5  rounded-[18px] shadow border p-5">
-    <Image src="/imgs/reg.svg" width="5" height="5" alt="" className="w-[350px] h-auto"/>
-    <div className=" text-black text-[40px] font-semibold font-sans leading-[39px] tracking-[-6%] my-3">Simple and secure <br className="" /> registration process</div>
-    <div className="w-[480px] text-neutral-600 text-[18px] font-normal font-sans my-3 leading-[27px]">Palette is an enshrined protocol on the network level that enables permissionless creation of marketplaces while enforcing royalties.</div>
-    </div>
-    <div className="w-1/3">
-      <div className=" bg-white  rounded-[18px] shadow border border-gray-200">
-        <div className="flex items-center  relative">
-<p className="w-[341px] py-[34px] text-black text-[32px] font-semibold font-['Work Sans'] leading-[33px]">Payout is faster than normal</p>
-<div className="right-0 absolute">
 
-      <Image src="/imgs/payout.svg" width="5" height="5" alt="" className="w-[250px] "/>
+      <div className="bg-emerald-50 bg-opacity-25">
+        <div className="flex lg:flex-row flex-col items-center justify-center container mx-auto">
+          <div className="bg-white lg:w-[699px] flex  flex-col h-[709px] w-full mx-5  rounded-[18px] shadow border p-5">
+            <Image
+              src="/imgs/reg.svg"
+              width="5"
+              height="5"
+              alt=""
+              className="w-[454.97px] h-[376.39px] "
+            />
+            <div className=" text-black text-[50px] font-semibold font-sans leading-[40px] tracking-[-6%] my-3">
+              Simple and secure <br className="" /> registration process
+            </div>
+            <div className="lg:w-[480px] w-full text-neutral-600 text-[18px] font-normal font-sans my-3 leading-[27px]">
+              Palette is an enshrined protocol on the network level that enables
+              permissionless creation of marketplaces while enforcing royalties.
+            </div>
+          </div>
+          <div className="">
+            <div className=" bg-white my-5  rounded-[18px] shadow border border-gray-200 lg:w-[450px] w-auto lg:p-5 ">
+            <div className="right-0 absolute">
+                  <Image
+                    src="/imgs/payout.svg"
+                    width="5"
+                    height="5"
+                    alt=""
+                    className="lg:w-[250px] w-[150px] "
+                  />
+                </div>
+<div className=" pt-32">
+
+                <p className=" w-full lg:w-[341px]  text-black text-[28px] font-semibold my-5 font-sans leading-[22px]">
+                  Payout is faster than normal
+                </p>
+               
+              
+              <div className="text-neutral-600 text-[18px] mt-5 font-normal font-sans leading-[27px]">
+                Palette is an enshrined protocol on the network level that
+                enables permissionless creation of marketplaces while enforcing
+                royalties.
+              </div>
 </div>
+            </div>
+            <div className=" bg-white my-5  rounded-[18px] shadow border border-gray-200 lg:w-[450px] w-auto lg:p-5 ">
+            <div className="right-0 absolute">
+                  <Image
+                    src="/imgs/payout.svg"
+                    width="5"
+                    height="5"
+                    alt=""
+                    className="lg:w-[250px] w-[150px] "
+                  />
+                </div>
+<div className=" pt-32">
+
+                <p className=" w-full lg:w-[341px]  text-black text-[28px] font-semibold my-5 font-sans leading-[22px]">
+                  Payout is faster than normal
+                </p>
+               
+              
+              <div className="text-neutral-600 text-[18px] mt-5 font-normal font-sans leading-[27px]">
+                Palette is an enshrined protocol on the network level that
+                enables permissionless creation of marketplaces while enforcing
+                royalties.
+              </div>
+</div>
+            </div>
+         
+          </div>
         </div>
-      <div className="self-stretch text-neutral-600 text-[21px] font-normal font-['Work Sans'] leading-[27px]">Palette is an enshrined protocol on the network level that enables permissionless creation of marketplaces while enforcing royalties.</div>
       </div>
-    </div>
-  </div>
-     </div>
     </>
   );
 }
