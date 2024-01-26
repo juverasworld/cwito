@@ -94,8 +94,8 @@ export default function Home() {
             {/* <Link className="bg-black lg:hidden flex text-[#fff] leading-[16px] px-[16px] py-[8px] rounded-[5px] text-[11px]" href="/">Login</Link> */}
           </div>
         </nav>
-<div className="absolute">
-  <img src="" alt="" />
+<div className="absolute top-36 bottom-11 right-1" >
+  <img src="/imgs/chatbox" alt="" />
 </div>
         <div className="relative">
           <div className="bg-heroSm lg:bg-none bg-no-repeat bg-cover  relative  md:pt-52 pt-44   ">
