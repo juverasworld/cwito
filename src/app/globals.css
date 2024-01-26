@@ -32,6 +32,28 @@ nav {
   font-family: inter;
   font-weight: 400;
 }
+.footer{
+  /* background-color: purple; */
+}
+::placeholder{
+  font-family: "Work Sans";
+  padding: 10px;
+  padding-left: 10px;
+}
+.input-button{
+  position: absolute;
+  right: 4px;
+  width: 133.48px;
+  height: 38px;
+  top: 5px;
+
+}
+.input{
+  width: 400px;
+  height: 48px;
+  background: transparent;
+  
+}
 
 .text-grad {
   background: linear-gradient(to right, #FFFF8D, #CC6984);
@@ -41,11 +63,24 @@ nav {
 
 
 }
+.dd{
+justify-content: space-evenly;
+width: 500px;
 
+}
+Link{
+  /* margin: 10px; */
+}
+.fit{
+  background: linear-gradient(to right, #023436, #3C9541);
+
+}
 .hero {
   padding: 24px, 32px, 24px, 32px
 }
-
+.fix{
+  z-index: 1;
+}
 .containers {
   position: relative;
   white-space: nowrap;
