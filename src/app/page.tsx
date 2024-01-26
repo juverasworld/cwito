@@ -206,7 +206,8 @@ text-[21px] font-normal leading-[27px]"
               className="w-[454.97px] h-[376.39px] "
             />
             <div className=" text-black text-[50px] font-semibold font-sans leading-[40px] tracking-[-6%] my-3">
-              Simple and secure <br className="lg:flex hidden" /> registration process
+              Simple and secure <br className="lg:flex hidden" /> registration
+              process
             </div>
             <div className="lg:w-[480px] w-full text-neutral-600 text-[18px] font-normal font-sans my-3 leading-[27px]">
               Palette is an enshrined protocol on the network level that enables
@@ -214,55 +215,50 @@ text-[21px] font-normal leading-[27px]"
             </div>
           </div>
           <div className="">
-            <div className=" bg-white my-5 p-5  rounded-[18px] shadow border border-gray-200 lg:w-[386.50px] w-auto lg:p-5 ">
-            <div className="right-0 absolute">
-                  <Image
-                    src="/imgs/payout.svg"
-                    width="5"
-                    height="5"
-                    alt=""
-                    className="lg:w-[250px] w-[150px] "
-                  />
-                </div>
-<div className=" pt-32">
-
+            <div className=" bg-white my-5 p-5 relative rounded-[18px] shadow border border-gray-200 lg:w-[386.50px] w-auto lg:p-5 ">
+              <div className="right-[1px] top-0 absolute">
+                <Image
+                  src="/imgs/payout.svg"
+                  width="5"
+                  height="5"
+                  alt=""
+                  className="lg:w-[250px] w-[120px] rounded-r-md"
+                />
+              </div>
+              <div className=" pt-32">
                 <p className=" w-full lg:w-[341px]  text-black text-[28px] font-semibold my-5 font-sans leading-[22px]">
                   Payout is faster than normal
                 </p>
-               
-              
-              <div className="text-neutral-600 text-[18px] mt-5 font-normal font-sans leading-[27px]">
-                Palette is an enshrined protocol on the network level that
-                enables permissionless creation of marketplaces while enforcing
-                royalties.
+
+                <div className="text-neutral-600 text-[18px] mt-5 font-normal font-sans leading-[27px]">
+                  Palette is an enshrined protocol on the network level that
+                  enables permissionless creation of marketplaces while
+                  enforcing royalties.
+                </div>
               </div>
-</div>
             </div>
             <div className=" bg-white my-5 p-5 relative rounded-[18px] shadow border border-gray-200 lg:w-[386.50px] w-auto lg:p-5 ">
-            <div className="right-[1px] top-0 absolute">
-                  <Image
-                    src="/imgs/justTrade.svg"
-                    width="5"
-                    height="5"
-                    alt=""
-                    className="lg:w-[250px] w-[120px] rounded-r-md"
-                  />
-                </div>
-<div className=" pt-32">
-
-                <p className=" w-full lg:w-[341px]  text-black text-[28px] font-semibold my-5 font-sans leading-[22px]">
-                No hodling, Just trade!
-                </p>
-               
-              
-              <div className="text-neutral-600 text-[18px] mt-5 font-normal font-sans leading-[27px]">
-                Palette is an enshrined protocol on the network level that
-                enables permissionless creation of marketplaces while enforcing
-                royalties.
+              <div className="right-[1px] top-0 absolute">
+                <Image
+                  src="/imgs/justTrade.svg"
+                  width="5"
+                  height="5"
+                  alt=""
+                  className="lg:w-[250px] w-[120px] rounded-r-md"
+                />
               </div>
-</div>
+              <div className=" pt-32">
+                <p className=" w-full lg:w-[341px]  text-black text-[28px] font-semibold my-5 font-sans leading-[22px]">
+                  No hodling, Just trade!
+                </p>
+
+                <div className="text-neutral-600 text-[18px] mt-5 font-normal font-sans leading-[27px]">
+                  Palette is an enshrined protocol on the network level that
+                  enables permissionless creation of marketplaces while
+                  enforcing royalties.
+                </div>
+              </div>
             </div>
-         
           </div>
         </div>
       </div>
