@@ -14,6 +14,8 @@ export default function Home() {
 
   return (
     <>
+    <div className=" relative">
+
       <div className="w-full relative bg-none lg:bg-heroLg  h-auto  bg-no-repeat bg-cover">
         <nav className="py-3  border-b-[1px] w-[100%]  z-24 text-[16px] leading-[24px] font-sans ">
           <div className="flex w-[100%] items-center justify-between md:px-24  px-2">
@@ -94,9 +96,7 @@ export default function Home() {
             {/* <Link className="bg-black lg:hidden flex text-[#fff] leading-[16px] px-[16px] py-[8px] rounded-[5px] text-[11px]" href="/">Login</Link> */}
           </div>
         </nav>
-<div className="absolute top-36 bottom-11 right-1" >
-  <img src="/imgs/chatbox" alt="" />
-</div>
+
         <div className="relative">
           <div className="bg-heroSm lg:bg-none bg-no-repeat bg-cover  relative  md:pt-52 pt-44   ">
             <div className=" flex items-center justify-center  flex-col ">
@@ -197,7 +197,10 @@ text-[21px] font-normal leading-[27px]"
           </div>
         </div>
       </div>
-
+      <div className="fixed top-[80%] bottom-[50%] right-[5%] z-1" >
+      
+  <img src="/imgs/chatbox.svg" alt=""  />
+</div>
       <div className="bg-emerald-50 bg-opacity-25 ">
         <div className="flex lg:flex-row flex-col items-center justify-center container mx-auto">
           <div className="bg-white lg:w-[699px] flex  flex-col h-[720px] w-full mx-5  rounded-[18px] shadow border p-5">
@@ -327,6 +330,7 @@ text-[21px] font-normal leading-[27px]"
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 }
