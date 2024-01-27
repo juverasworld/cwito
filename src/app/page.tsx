@@ -336,12 +336,111 @@ text-[21px] font-normal leading-[27px]"
             </div>
           </div>
         </div>
-        <div className="footer bg-[#023436]">
-<Footer/>
-<div className="">
-Parthean is educational, and is not an offer to sell or a solicitation of an offer to buy any security. Parthean is not a financial advisor, portfolio manager, or accountant, nor is your dedicated Parthean Coach. The sole purpose of your Parthean Coach is to guide your education — this is not financial advice, investing advice, or tax advice. None of the information conveyed through this app is a recommendation to buy, hold, or sell an investment or financial product, or take any action. None of the information conveyed through this app should serve as the basis for any investment decision. All investments involve risk, including the possible loss of capital. Past performance does not guarantee future results or returns.
-</div>
+        <div className="bg-[#023436] font-sans">
+         <div className=" py-16 lg:mx-10 mx-5 ">
+        <footer className=" border-0 flex items-center lg:mx-10 mx-0  justify-center container  w-[100%]">
+    <div className="flex xl:flex-row w-full  flex-col justify-center items-center">
+    <div className="lg:w-auto c  w-full ">
+        <form
+          action=""
+          className="lg:flex-row flex-col relative w-fit fit lg:flex hidden rounded-[5px]  px-5 items-center"
+        >
+          <input
+            type="text"
+            placeholder="Your E-mail "
+            className="input placeholder:font-sans  outline-none placeholder:p-3 "
+          />
+
+          <button className="font-sans text-[#023436] font-[16px] leading-[24px]  absolute right-0 input-button bg-white ">
+            Subscribe
+          </button>
+        </form>
+        <form action="" className="lg:hidden flex  flex-col w-[100%] items-start  ">
+          <input
+            type="text"
+            placeholder="your email "
+            className=" inputSm w-full outline-none   rounded-[8px]  placeholder:font-sans placeholder:p-3"
+          />
+
+          <button className="font-sans rounded-[5px] w-full my-5 py-3  text-[#023436] font-[16px] leading-[24px] bg-white">
+            <Link href="/" className="">
+              Subscribe
+            </Link>
+          </button>
+        </form>
+      </div>
+      <div className="flex  md:flex-row flex-col w-full xl:w-auto container mx-auto text-[#E5E5E5]   items-start md:items-center">
+        <div className="flex mx-5 my-3 lg:my-0 flex-row">
+          <div className="flex lg:flex-row flex-col">
+            
+            <Link className="lg:mx-1 lg:hidden flex mx-0  my-4" href="#about">
+            <Image
+            src="/imgs/logoSm.svg"
+            width={200}
+            height={150}
+            alt="Image 1"
+            className=" h-8 w-auto"
+
+          />
+            </Link>
+            <Link className="lg:pr-10 pr-0  my-4" href="">
+             About
+            </Link>
+            <Link className="lg:pr-10 pr-0  my-4" href="#speakers">
+             Careers
+            </Link>
+            <Link className="lg:pr-10 pr-0  my-4" href="#partners">
+             Blog
+            </Link>
+            <Link className="lg:pr-10 pr-0  my-4" href="#partners">
+             Terms and Condition
+            </Link>
+          </div>
+      
         </div>
+        <div className="flex mx-0 md:mx-5 my-4 ">
+          <p className="lg:ml-5">
+          <div className="">
+        <img src="imgs/socials.svg" alt="" />
+      </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+     
+          <div className="flex items-center justify-between mx-0 mt-5 lg:mx-7">
+            <p className="">
+            <Link className="lg:mx-3 lg:flex hidden  mx-0  my-4" href="#about">
+            <Image
+            src="/imgs/logoSm.svg"
+            width={200}
+            height={150}
+            alt="Image 1"
+            className=" h-8 w-auto"
+
+          />
+          </Link>
+            </p>
+            <p className="w-auto lg:w-[700px] text-align font-sans text-[18px] leading-[28px] text-[#E5E5E5]">
+             Parthean is educational, and is not an offer to sell or a
+            solicitation of an offer to buy any security. Parthean is not a
+            financial advisor, portfolio manager, or accountant, nor is your
+            dedicated Parthean Coach. The sole purpose of your Parthean Coach is
+            to guide your education — this is not financial advice, investing
+            advice, or tax advice. None of the information conveyed through this
+            app is a recommendation to buy, hold, or sell an investment or
+            financial product, or take any action. None of the information
+            conveyed through this app should serve as the basis for any
+            investment decision. All investments involve risk, including the
+            possible loss of capital. Past performance does not guarantee future
+            results or returns. 
+            </p>
+            
+          </div>
+        </div> 
+        </div>
+        
       </div>
     </>
   );

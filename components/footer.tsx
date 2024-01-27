@@ -1,54 +1,84 @@
-import Link from "next/link"
-export default function Footer() {
-   return(
-    <div className="font-sans mx-10 w-full flex lg:flex-row flex-col items-center r">
-    <div className="lg:w-auto c  w-full">
-        <form action="" className="lg:flex-row flex-col relative w-fit fit lg:flex hidden rounded-[5px]  px-5">
-            <input type="text" placeholder="Your E-mail " className="input placeholder:font-sans placeholder:p-3 "  />
+import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
-            <button className="font-sans font-[16px] leading-[24px]  absolute right-0 input-button bg-white ">Subscribe</button>
-        </form>
-        <form action="" className="lg:hidden flex flex-col w-full items-start">
-        <input type="text" placeholder="your email " className=" inputSm w-full  block placeholder:font-sans placeholder:p-3"  />
-
-<button className="font-sans w-full  font-[16px] leading-[24px] bg-white">
-    <Link href="/" className="">
-
-    Subscribe
-    </Link>
-    </button>  
-        </form>
-    </div>
-    <div className="flex lg:flex-row text-[16px] leading-[24px] text-[#E5E5E5]   flex-col dd lg:w-[600px] justify-evenly w-full -2 container mx-auto ">
-        <p className="pr-4 -2 mx-3">
-
-        <Link className="text-[16px] leading-[24px] text-[#E5E5E5] " href={"/"}>
-
-        About
+const Footer = () => {
+  return (
+    <footer className="my-16 border-0 flex w-full items-center  justify-center">
+    <div className="flex xl:flex-row w-full  flex-col justify-center items-center">
+      <div className="my-2 mx-10 lg:mx-5 xl:w-auto w-full ">
+        <Link
+          href="/"
+          className="text-[#808080] mx-5 font-500  font-500  font-500 text-lg font-bold"
+        >
+          <Image src="/img/logo.svg" alt="img" width="100" height="100" />
         </Link>
+        <p className="my-2 mx-5">
+          DSNUNNSummit is a comprehensive event
+          <br className="xl:flex lg:hidden flex" /> spotlighting diverse
+          careers in Africa&apos;s data space
         </p>
-        <p className="text-[16px] leading-[24px] text-[#E5E5E5] ">
-
-        <Link className="pr-4 -2 mx-3" href={"/"}>
-       Careers
-        </Link>
+        <p className="flex my-2 items-center">
+          <Image
+            src="/img/twitter.svg"
+            alt="img"
+            width="100"
+            height="100"
+            className="w-auto mx-3"
+          />
+          <Image
+            src="/img/linkedin.svg"
+            alt="img"
+            width="100"
+            height="100"
+            className="w-auto mx-3"
+          />
         </p>
-        <p className="text-[16px] leading-[24px] text-[#E5E5E5] ">
+      </div>
+      <div className="flex mx-10 lg:mx-2 md:flex-row flex-col w-full xl:w-auto  mx-0  items-start md:items-center">
+        <div className="flex mx-5 my-3 lg:my-0 flex-row">
+          <div className="flex  flex-col">
+            <Link className="lg:mx-1 mx-2  my-2" href="#about">
+              About
+            </Link>
+            <Link className="lg:mx-1 mx-2  my-2" href="#speakers">
+              Speakers
+            </Link>
+            <Link className="lg:mx-1 mx-2  my-2" href="#partners">
+              Partners & Sponsors
+            </Link>
+          </div>
+          <div className="flex  flex-col">
+            <Link className="lg:mx-1 mx-2  my-2" href="#panelist">
+              Panelist
+            </Link>
+            <Link className="lg:mx-1 mx-2  my-2" href="#organizers">
+              Organizers
+            </Link>
+            <Link className="lg:mx-1 mx-2  my-2" href="/">
+              Our Blog
+            </Link>
+          </div>
+        </div>
+        <div className="flex mx-0 md:mx-5 my-2 ">
+          <p className="ml-5">
+            <button className="flex items-center justify-center whitespace-nowrap text-[#fff] bg-[#009933] rounded-3xl   px-[16px] py-[8px] text-[16px]">
+              Join Our Community
+              <Image
+                src="/img/arrow.svg"
+                width="10"
+                height="10"
+                alt=""
+                className="w-auto px-2"
+              />
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+     
+  );
+};
 
-        <Link className="text-[16px] leading-[24px] text-[#E5E5E5] " href={"/"}>
-   Blogs
-        </Link>
-        </p>
-        <Link className="text-[16px] leading-[24px] text-[#E5E5E5] " href={"/"}>
-   Privacy Policy
-        </Link>
-        <Link className="text-[16px] leading-[24px] text-[#E5E5E5] " href={"/"}>
-   Terms and Condition
-        </Link>
-    </div>
-    <div className="">
-        <img src="imgs/socials.svg" alt="" />
-    </div>
-</div>
-   )
-}
+export default Footer;
