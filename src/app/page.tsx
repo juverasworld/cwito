@@ -438,6 +438,9 @@ text-[21px] font-normal leading-[27px]"
             </p>
             
           </div>
+        <div className="pt-16 text-[#fff] font-[14px] text-[24px]">
+        © Cwito 2023
+        </div>
         </div> 
         </div>
         
