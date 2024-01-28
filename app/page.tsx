@@ -40,8 +40,8 @@ export default function Home() {
               </div>
               <div className=" flex items-center justify-center  flex-col ">
                 <div
-                  className="font-sans xl:w-[700px] lg:w-[396px] w-auto  text-center text-white text-5xl font-semibold
-leading-[42px] flex flex-col items-center justify-center mx-auto "
+                  className="font-sans xl:w-[700px] lg:w-[396px] w-auto  text-center text-white text-4xl lg:text-5xl font-semibold
+lg:leading-[42px] leading-[36px] flex flex-col items-center justify-center mx-auto "
                 >
                   <p data-aos="fade-up" className="font-sans  ">
                     Your<span className="text-[#5DC1BD]"> one-stop</span>{" "}
@@ -52,7 +52,7 @@ leading-[42px] flex flex-col items-center justify-center mx-auto "
 
                 <div
                   data-aos="fade-down"
-                  className=" font-sans text-[18px] leading-[28pz] lg:w-[490px] text-center p-[2px] mt-16  w-[318px] text-zinc-100 text-lg font-normal"
+                  className=" font-sans text-[18px] leading-[28pz] lg:w-[490px] text-center p-[2px] lg:mt-16 mt-10  w-[318px] text-zinc-100 text-lg font-normal"
                 >
                   At Cwito, we ensure effortless conversion of your
                   cryptocurrencies into naira instantly.
