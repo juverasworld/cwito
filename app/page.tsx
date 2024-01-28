@@ -1,13 +1,19 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Nav from "../../components/navbar";
-import Footer from "../../components/footer";
+import { fadeIn } from "../variants";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 // import Reg from "../../components/reg";
 
 export default function Home() {
+  useEffect(() => {
+    // Initialize AOS when the component mounts
+    AOS.init();
+  }, []);
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -108,18 +114,27 @@ export default function Home() {
                   className="font-sans xl:w-[700px] lg:w-[396px] w-auto  text-center text-white text-5xl font-semibold
 leading-[42px] flex flex-col items-center justify-center mx-auto "
                 >
-                  <p className="font-sans  ">
+                  <p data-aos="fade-up" className="font-sans  ">
                     Your<span className="text-[#5DC1BD]"> one-stop</span>{" "}
                     <br className="" /> shop for crypto <br className="" /> &
                     cash
                   </p>
                 </div>
 
-                <div className=" font-sans text-[18px] leading-[28pz] lg:w-[490px] text-center p-[2px] my-10  w-[318px] text-zinc-100 text-lg font-normal">
+                <div
+                  data-aos="fade-down"
+                  className=" font-sans text-[18px] leading-[28pz] lg:w-[490px] text-center p-[2px] my-10  w-[318px] text-zinc-100 text-lg font-normal"
+                >
                   At Cwito, we ensure effortless conversion of your
                   cryptocurrencies into naira instantly.
                 </div>
-                <div className="w-[259px] h-[60px] p-6 bg-white rounded-lg my-4 justify-center items-center gap-2 inline-flex border-0 ">
+                <motion.div
+                  variants={fadeIn("right", 0.3)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="w-[259px] h-[60px] p-6 bg-white rounded-lg my-4 justify-center items-center gap-2 inline-flex border-0 "
+                >
                   <div className="justify-center items-center flex">
                     <Link
                       href="#"
@@ -128,7 +143,7 @@ leading-[42px] flex flex-col items-center justify-center mx-auto "
                       Download Cwito
                     </Link>
                   </div>
-                </div>
+                </motion.div>
                 <Link
                   href="/"
                   className="text-stone-300 text-base  font-sans underline leading-normal font-thin"
@@ -141,12 +156,14 @@ leading-[42px] flex flex-col items-center justify-center mx-auto "
                   <div className=" grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-x-24 gap-y-6 p-2">
                     <div className="">
                       <p
+                        data-aos="fade-right"
                         className="text-grad 200 text-[38px] font-semibold
 font-sans leading-[38px]"
                       >
                         23K
                       </p>
                       <p
+                        data-aos="fade-left"
                         className="font-sans text-stone-300
 text-[21px] font-normal leading-[27px]"
                       >
@@ -156,12 +173,14 @@ text-[21px] font-normal leading-[27px]"
 
                     <div className="">
                       <p
+                        data-aos="fade-right"
                         className="text-grad 200 text-[38px] font-semibold
 font-sans leading-[38px]"
                       >
                         2X faster
                       </p>
                       <p
+                        data-aos="fade-left"
                         className="font-sans text-stone-300
 text-[21px] font-normal leading-[27px]"
                       >
@@ -170,12 +189,14 @@ text-[21px] font-normal leading-[27px]"
                     </div>
                     <div className="">
                       <p
+                        data-aos="fade-right"
                         className="text-grad 200 text-[38px] font-semibold
 font-sans leading-[38px]"
                       >
                         $17 million
                       </p>
                       <p
+                        data-aos="fade-left"
                         className="font-sans text-stone-300
 text-[21px] font-normal leading-[27px]"
                       >
@@ -184,12 +205,14 @@ text-[21px] font-normal leading-[27px]"
                     </div>
                     <div className="">
                       <p
+                        data-aos="fade-right"
                         className="text-grad 200 text-[38px] font-semibold
 font-sans leading-[38px]"
                       >
                         24/7
                       </p>
                       <p
+                        data-aos="fade-left"
                         className="font-sans text-stone-300
 text-[21px] font-normal leading-[27px]"
                       >
@@ -203,19 +226,35 @@ text-[21px] font-normal leading-[27px]"
           </div>
         </div>
         <div className="fixed top-[80%] bottom-[50%] right-[3%] fix">
-          <img src="/imgs/chatbox.svg" alt="" className="w-auto" />
+          <Image
+            src="/imgs/chatbox.svg"
+            alt=""
+            width="10"
+            height="10"
+            className="w-auto"
+          />
         </div>
         <div className="bg-emerald-50 bg-opacity-25 py-44 px-5   ">
           <div className="flex lg:flex-row flex-col items-center justify-center container mx-auto">
-            <div className="bg-white lg:w-[699px] flex  flex-col lg:h-[720px] w-full mx-5  rounded-[18px] shadow border p-5">
+            <motion.div
+              variants={fadeIn("down", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className="bg-white lg:w-[699px] flex  flex-col lg:h-[720px] w-full mx-5  rounded-[18px] shadow border p-5"
+            >
               <Image
+                data-aos="zoom-in"
                 src="/imgs/reg.svg"
                 width="5"
                 height="5"
                 alt=""
                 className="lg:w-[454.97px] lg:h-[376.39px] w-[150px] h-[150px]"
               />
-              <div className=" text-black lg:text-[50px] font-semibold font-sans text-[28px] leading-[30px] lg:leading-[40px]  tracking-[-6%] my-3">
+              <div
+                data-aos="zoom-out"
+                className=" text-black lg:text-[50px] font-semibold font-sans text-[28px] leading-[30px] lg:leading-[40px]  tracking-[-6%] my-3"
+              >
                 Simple and secure <br className="lg:flex hidden" /> registration
                 process
               </div>
@@ -224,11 +263,18 @@ text-[21px] font-normal leading-[27px]"
                 enables permissionless creation of marketplaces while enforcing
                 royalties.
               </div>
-            </div>
+            </motion.div>
             <div className="">
-              <div className=" bg-white my-5 p-8 relative rounded-[18px] shadow border border-gray-200 lg:w-[386.50px] w-auto lg:p-5 ">
-                <div className="right-[1px] top-0 absolute">
+              <motion.div
+                variants={fadeIn("up", 0.3)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className=" bg-white my-5 p-8 relative rounded-[18px] shadow border border-gray-200 lg:w-[386.50px] w-auto lg:p-5 "
+              >
+                <div className="right-[1px]  top-0 absolute">
                   <Image
+                    data-aos="fade-right"
                     src="/imgs/payout.svg"
                     width="5"
                     height="5"
@@ -237,7 +283,10 @@ text-[21px] font-normal leading-[27px]"
                   />
                 </div>
                 <div className=" pt-32">
-                  <p className=" w-full lg:w-[341px]  text-black text-[28px] font-semibold my-5 font-sans leading-[22px]">
+                  <p
+                    data-aos="fade-out"
+                    className=" w-full lg:w-[341px]  text-black text-[28px] font-semibold my-5 font-sans leading-[22px]"
+                  >
                     Payout is faster than normal
                   </p>
 
@@ -247,10 +296,17 @@ text-[21px] font-normal leading-[27px]"
                     enforcing royalties.
                   </div>
                 </div>
-              </div>
-              <div className=" bg-white my-5 p-8 relative rounded-[18px] shadow border border-gray-200 lg:w-[386.50px] w-auto lg:p-5 ">
+              </motion.div>
+              <motion.div
+                variants={fadeIn("left", 0.3)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className=" bg-white my-5 p-8 relative rounded-[18px] shadow border border-gray-200 lg:w-[386.50px] w-auto lg:p-5 "
+              >
                 <div className="right-[1px] top-0 absolute">
                   <Image
+                    data-aos="fade-left"
                     src="/imgs/justTrade.svg"
                     width="5"
                     height="5"
@@ -259,7 +315,10 @@ text-[21px] font-normal leading-[27px]"
                   />
                 </div>
                 <div className=" pt-32">
-                  <p className=" w-full lg:w-[341px]  text-black text-[28px] font-semibold my-5 font-sans leading-[22px]">
+                  <p
+                    data-aos="zoom-out"
+                    className=" w-full lg:w-[341px]  text-black text-[28px] font-semibold my-5 font-sans leading-[22px]"
+                  >
                     No hodling, Just trade!
                   </p>
 
@@ -269,14 +328,20 @@ text-[21px] font-normal leading-[27px]"
                     enforcing royalties.
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
 
           <div className="items-center justify-center container flex lg:flex-row flex-col ">
             <div className="flex lg:flex-row flex-col  w-fit  justify-center items-center mx-auto container bg-emerald-50 bg-opacity-25  ">
               <div className=" my-5 lg:m-6 m-0 w-full lg:w-auto ">
-                <div className="  bg-white rounded-xl border border-slate-900 border-opacity-20 justify-start items-start lg:flex-row flex-col lg:p-10 p-4  flex">
+                <motion.div
+                  variants={fadeIn("down", 0.3)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="  bg-white rounded-xl border border-slate-900 border-opacity-20 justify-start items-start lg:flex-row flex-col lg:p-10 p-4  flex"
+                >
                   <div className="flex-col lg:justify-start justify-center items-center lg:items-start gap-[45px] lg:gap-[60px] inline-flex">
                     <div className="lg:w-[230.64px] w-full h-auto lg:h-[27px] text-black text-[24px] lg:text-[32px] font-semibold font-sans leading-[33px]">
                       Cwito in 60 seconds
@@ -287,28 +352,49 @@ text-[21px] font-normal leading-[27px]"
                     </div>
                   </div>
                   <div className="w-[200px] h-[138px] lg:my-0 my-16 relative flex items-center justify-center lg:mx-0 mx-auto ">
-                    <img
+                    <Image
+                      alt=""
+                      width="10"
+                      height="10"
                       className="w-[200px] h-[138px] left-0 top-0 absolute"
                       src="imgs/steep.svg"
                     />
                     <div className="w-12 h-12 pl-[18px] pr-3.5 py-[14.50px] left-[76px] top-[45px] absolute rounded-full border-2 border-white justify-end items-center inline-flex">
                       <div className="w-4 h-[19px] relative flex-col justify-start items-start flex">
                         {" "}
-                        <img className="" src="imgs/play.svg" />
+                        <Image
+                          className="w-auto"
+                          width="10"
+                          height="10"
+                          alt=""
+                          src="imgs/play.svg"
+                        />
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
               <div className=" my-5  lg:m-6 m-0 w-full lg:w-auto">
-                <div className="lg:w-auto w-full  h-auto px-[25px] py-[32px] bg-white rounded-2xl border border-slate-900 border-opacity-20 flex-col gap-1 justify-start items-start  inline-flex">
+                <motion.div
+                  variants={fadeIn("up", 0.3)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="lg:w-auto w-full  h-auto px-[25px] py-[32px] bg-white rounded-2xl border border-slate-900 border-opacity-20 flex-col gap-1 justify-start items-start  inline-flex"
+                >
                   <div className="lg:w-[140px] h-[35.55px] justify-center items-center inline-flex">
                     <div className="grow shrink basis-0 self-stretch justify-center items-center inline-flex">
                       <div className="w-[140px] h-[35.55px] relative flex-col justify-start items-start flex">
                         <div className="w-[28.49px] h-[33.54px] relative"></div>
                         <div className="relative w-[140px]">
                           <div className="">
-                            <img src="imgs/sematic.svg" className="w-[140px]" />
+                            <Image
+                              src="imgs/sematic.svg"
+                              width="10"
+                              height="10"
+                              alt=""
+                              className="w-[140px]"
+                            />
                           </div>
                         </div>
                       </div>
@@ -331,119 +417,128 @@ text-[21px] font-normal leading-[27px]"
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
         </div>
         <div className="bg-[#023436] font-sans">
-         <div className=" py-16 lg:mx-10 mx-5 ">
-        <footer className=" border-0 flex items-center lg:mx-10 mx-0  justify-center container  w-[100%]">
-    <div className="flex xl:flex-row w-full  flex-col justify-center items-center">
-    <div className="lg:w-auto c  w-full ">
-        <form
-          action=""
-          className="lg:flex-row flex-col relative w-fit fit lg:flex hidden rounded-[5px]  px-5 items-center"
-        >
-          <input
-            type="text"
-            placeholder="Your E-mail "
-            className="input placeholder:font-sans  outline-none placeholder:p-3 "
-          />
+          <div className=" py-16 lg:mx-10 mx-5 ">
+            <footer className=" border-0 flex items-center lg:mx-10 mx-0  justify-center container  w-[100%]">
+              <div className="flex xl:flex-row w-full  flex-col justify-center items-center">
+                <div className="lg:w-auto c  w-full ">
+                  <form
+                    action=""
+                    className="lg:flex-row flex-col relative w-fit fit lg:flex hidden rounded-[5px]  px-5 items-center"
+                  >
+                    <input
+                      type="text"
+                      placeholder="Your E-mail "
+                      className="input placeholder:font-sans  outline-none placeholder:p-3 "
+                    />
 
-          <button className="font-sans text-[#023436] font-[16px] leading-[24px]  absolute right-0 input-button bg-white ">
-            Subscribe
-          </button>
-        </form>
-        <form action="" className="lg:hidden flex  flex-col w-[100%] items-start  ">
-          <input
-            type="text"
-            placeholder="your email "
-            className=" inputSm w-full outline-none   rounded-[8px]  placeholder:font-sans placeholder:p-3"
-          />
+                    <button className="font-sans text-[#023436] font-[16px] leading-[24px]  absolute right-0 input-button bg-white ">
+                      Subscribe
+                    </button>
+                  </form>
+                  <form
+                    action=""
+                    className="lg:hidden flex  flex-col w-[100%] items-start  "
+                  >
+                    <input
+                      type="text"
+                      placeholder="your email "
+                      className=" inputSm w-full outline-none   rounded-[8px]  placeholder:font-sans placeholder:p-3"
+                    />
 
-          <button className="font-sans rounded-[5px] w-full my-5 py-3  text-[#023436] font-[16px] leading-[24px] bg-white">
-            <Link href="/" className="">
-              Subscribe
-            </Link>
-          </button>
-        </form>
-      </div>
-      <div className="flex  md:flex-row flex-col w-full xl:w-auto container mx-auto text-[#E5E5E5]   items-start md:items-center">
-        <div className="flex mx-5 my-3 lg:my-0 flex-row">
-          <div className="flex lg:flex-row flex-col">
-            
-            <Link className="lg:mx-1 lg:hidden flex mx-0  my-4" href="#about">
-            <Image
-            src="/imgs/logoSm.svg"
-            width={200}
-            height={150}
-            alt="Image 1"
-            className=" h-8 w-auto"
+                    <button className="font-sans rounded-[5px] w-full my-5 py-3  text-[#023436] font-[16px] leading-[24px] bg-white">
+                      <Link href="/" className="">
+                        Subscribe
+                      </Link>
+                    </button>
+                  </form>
+                </div>
+                <div className="flex  md:flex-row flex-col w-full xl:w-auto container mx-auto text-[#E5E5E5]   items-start md:items-center">
+                  <div className="flex mx-5 my-3 lg:my-0 flex-row">
+                    <div className="flex lg:flex-row flex-col">
+                      <Link
+                        className="lg:mx-1 lg:hidden flex mx-0  my-4"
+                        href="#about"
+                      >
+                        <Image
+                          src="/imgs/logoSm.svg"
+                          width={200}
+                          height={150}
+                          alt="Image 1"
+                          className=" h-8 w-auto"
+                        />
+                      </Link>
+                      <Link className="lg:pr-10 pr-0  my-4" href="">
+                        About
+                      </Link>
+                      <Link className="lg:pr-10 pr-0  my-4" href="#speakers">
+                        Careers
+                      </Link>
+                      <Link className="lg:pr-10 pr-0  my-4" href="#partners">
+                        Blog
+                      </Link>
+                      <Link className="lg:pr-10 pr-0  my-4" href="#partners">
+                        Terms and Condition
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex mx-0 md:mx-5 my-4 ">
+                    <p className="lg:ml-5">
+                      <div className="">
+                        <Image
+                          src="imgs/socials.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                          className="w-auto"
+                        />
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </footer>
 
-          />
-            </Link>
-            <Link className="lg:pr-10 pr-0  my-4" href="">
-             About
-            </Link>
-            <Link className="lg:pr-10 pr-0  my-4" href="#speakers">
-             Careers
-            </Link>
-            <Link className="lg:pr-10 pr-0  my-4" href="#partners">
-             Blog
-            </Link>
-            <Link className="lg:pr-10 pr-0  my-4" href="#partners">
-             Terms and Condition
-            </Link>
+            <div className="flex items-center justify-between mx-0 mt-5 lg:mx-7">
+              <p className="">
+                <Link
+                  className="lg:mx-3 lg:flex hidden  mx-0  my-4"
+                  href="#about"
+                >
+                  <Image
+                    src="/imgs/logoSm.svg"
+                    width={200}
+                    height={150}
+                    alt="Image 1"
+                    className=" h-8 w-auto"
+                  />
+                </Link>
+              </p>
+              <p className="w-auto lg:w-[700px] text-align font-sans text-[18px] leading-[28px] text-[#E5E5E5]">
+                Parthean is educational, and is not an offer to sell or a
+                solicitation of an offer to buy any security. Parthean is not a
+                financial advisor, portfolio manager, or accountant, nor is your
+                dedicated Parthean Coach. The sole purpose of your Parthean
+                Coach is to guide your education — this is not financial advice,
+                investing advice, or tax advice. None of the information
+                conveyed through this app is a recommendation to buy, hold, or
+                sell an investment or financial product, or take any action.
+                None of the information conveyed through this app should serve
+                as the basis for any investment decision. All investments
+                involve risk, including the possible loss of capital. Past
+                performance does not guarantee future results or returns.
+              </p>
+            </div>
+            <div className="pt-16 text-[#fff] font-[14px] text-[24px]">
+              © Cwito 2023
+            </div>
           </div>
-      
         </div>
-        <div className="flex mx-0 md:mx-5 my-4 ">
-          <p className="lg:ml-5">
-          <div className="">
-        <img src="imgs/socials.svg" alt="" />
-      </div>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-     
-          <div className="flex items-center justify-between mx-0 mt-5 lg:mx-7">
-            <p className="">
-            <Link className="lg:mx-3 lg:flex hidden  mx-0  my-4" href="#about">
-            <Image
-            src="/imgs/logoSm.svg"
-            width={200}
-            height={150}
-            alt="Image 1"
-            className=" h-8 w-auto"
-
-          />
-          </Link>
-            </p>
-            <p className="w-auto lg:w-[700px] text-align font-sans text-[18px] leading-[28px] text-[#E5E5E5]">
-             Parthean is educational, and is not an offer to sell or a
-            solicitation of an offer to buy any security. Parthean is not a
-            financial advisor, portfolio manager, or accountant, nor is your
-            dedicated Parthean Coach. The sole purpose of your Parthean Coach is
-            to guide your education — this is not financial advice, investing
-            advice, or tax advice. None of the information conveyed through this
-            app is a recommendation to buy, hold, or sell an investment or
-            financial product, or take any action. None of the information
-            conveyed through this app should serve as the basis for any
-            investment decision. All investments involve risk, including the
-            possible loss of capital. Past performance does not guarantee future
-            results or returns. 
-            </p>
-            
-          </div>
-        <div className="pt-16 text-[#fff] font-[14px] text-[24px]">
-        © Cwito 2023
-        </div>
-        </div> 
-        </div>
-        
       </div>
     </>
   );
