@@ -46,7 +46,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className=" py-0 font-normal border-b-[1px] font-sans text-[14px] w-[100%] fixed z-24 text-[16px] leading-[24px] font-sans ">
+    <nav className=" py-0 font-normal font-thin  border-b-[1px] font-sans text-[14px] w-[100%] fixed z-24 text-[16px] leading-[24px] font-sans ">
       <div
         className={`flex w-[100%] items-center justify-between lg:px-24  px-2">
  ${
