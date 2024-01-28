@@ -4,14 +4,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { fadeIn } from "../variants";
 
-import AOS from "aos";
+// import AOS from "aos";
+import AOS from "aos"
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 // import Reg from "../../components/reg";
 
 export default function Home() {
   useEffect(() => {
-    // Initialize AOS when the component mounts
+   
     AOS.init();
   }, []);
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -424,9 +425,9 @@ text-[21px] font-normal leading-[27px]"
         </div>
         <div className="bg-[#023436] font-sans">
           <div className=" py-16 lg:mx-10 mx-5 ">
-            <footer className=" border-0 flex items-center lg:mx-10 mx-0  justify-center container  w-[100%]">
+            <footer className=" border-0 font-sans flex items-center lg:mx-10 mx-0  justify-center container  w-[100%]">
               <div className="flex xl:flex-row w-full  flex-col justify-center items-center">
-                <div className="lg:w-auto c  w-full ">
+                <div data-aos="zoom-in" className="lg:w-auto c  w-full ">
                   <form
                     action=""
                     className="lg:flex-row flex-col relative w-fit fit lg:flex hidden rounded-[5px]  px-5 items-center"
@@ -458,14 +459,21 @@ text-[21px] font-normal leading-[27px]"
                     </button>
                   </form>
                 </div>
-                <div className="flex  md:flex-row flex-col w-full xl:w-auto container mx-auto text-[#E5E5E5]   items-start md:items-center">
-                  <div className="flex mx-5 my-3 lg:my-0 flex-row">
-                    <div className="flex lg:flex-row flex-col">
+                <div className="flex font-sans  md:flex-row flex-col w-full xl:w-auto container mx-auto text-[#E5E5E5]   items-start md:items-center">
+                  <div className="flex font-sans mx-5 my-3 lg:my-0 flex-row">
+                    <motion.div
+                      variants={fadeIn("up", 0.3)}
+                      initial="hidden"
+                      whileInView={"show"}
+                      viewport={{ once: false, amount: 0.3 }}
+                      className="flex lg:flex-row flex-col"
+                    >
                       <Link
                         className="lg:mx-1 lg:hidden flex mx-0  my-4"
-                        href="#about"
+                        href="/"
                       >
                         <Image
+                          data-aos="fade-up"
                           src="/imgs/logoSm.svg"
                           width={200}
                           height={150}
@@ -485,7 +493,7 @@ text-[21px] font-normal leading-[27px]"
                       <Link className="lg:pr-10 pr-0  my-4" href="#partners">
                         Terms and Condition
                       </Link>
-                    </div>
+                    </motion.div>
                   </div>
                   <div className="flex mx-0 md:mx-5 my-4 ">
                     <p className="lg:ml-5">
@@ -504,11 +512,13 @@ text-[21px] font-normal leading-[27px]"
               </div>
             </footer>
 
-            <div className="flex items-center justify-between mx-0 mt-5 lg:mx-7">
+            <div
+            data-aos="fade-down"
+            className="flex items-center justify-between mx-0 mt-5 lg:mx-7">
               <p className="">
                 <Link
                   className="lg:mx-3 lg:flex hidden  mx-0  my-4"
-                  href="#about"
+                  href="/"
                 >
                   <Image
                     src="/imgs/logoSm.svg"
@@ -519,7 +529,7 @@ text-[21px] font-normal leading-[27px]"
                   />
                 </Link>
               </p>
-              <p className="w-auto lg:w-[700px] text-align font-sans text-[18px] leading-[28px] text-[#E5E5E5]">
+              <p className="w-auto lg:w-[700px] text-align font-sans text-[16px] leading-[28px] text-[#E5E5E5]">
                 Parthean is educational, and is not an offer to sell or a
                 solicitation of an offer to buy any security. Parthean is not a
                 financial advisor, portfolio manager, or accountant, nor is your
@@ -534,7 +544,7 @@ text-[21px] font-normal leading-[27px]"
                 performance does not guarantee future results or returns.
               </p>
             </div>
-            <div className="pt-16 text-[#fff] font-[14px] text-[24px]">
+            <div className="pt-16 text-[#fff] leading-[14px] text-[18px]">
               © Cwito 2023
             </div>
           </div>
