@@ -477,19 +477,19 @@ text-[21px] font-normal leading-[27px]"
                           width={200}
                           height={150}
                           alt="Image 1"
-                          className=" h-8 w-auto"
+                          className=" h-[75px] w-[64px]"
                         />
                       </Link>
-                      <Link className="lg:pr-10 pr-0  my-4" href="">
+                      <Link className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4" href="">
                         About
                       </Link>
-                      <Link className="lg:pr-10 pr-0  my-4" href="#speakers">
+                      <Link className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4" href="#speakers">
                         Careers
                       </Link>
-                      <Link className="lg:pr-10 pr-0  my-4" href="#partners">
+                      <Link className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4" href="#partners">
                         Blog
                       </Link>
-                      <Link className="lg:pr-10 pr-0  my-4" href="#partners">
+                      <Link className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4" href="#partners">
                         Terms and Condition
                       </Link>
                     </motion.div>
@@ -521,12 +521,12 @@ text-[21px] font-normal leading-[27px]"
                     src="/imgs/logoSm.svg"
                     width={200}
                     height={150}
-                    alt="Image 1"
-                    className=" h-8 w-auto"
+                    alt="logo"
+                    className=" h-[75px] w-[64px]"
                   />
                 </Link>
               </p>
-              <p className="w-auto lg:w-[700px] text-align font-sans text-[16px] leading-[28px] text-[#E5E5E5]">
+              <p className="w-auto lg:w-[700px] lg:text-justify text-align font-sans text-[16px] leading-[28px] text-[#E5E5E5]">
                 Parthean is educational, and is not an offer to sell or a
                 solicitation of an offer to buy any security. Parthean is not a
                 financial advisor, portfolio manager, or accountant, nor is your
