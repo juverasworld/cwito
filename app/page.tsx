@@ -5,14 +5,13 @@ import Image from "next/image";
 import { fadeIn } from "../variants";
 
 // import AOS from "aos";
-import AOS from "aos"
+import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 // import Reg from "../../components/reg";
 
 export default function Home() {
   useEffect(() => {
-   
     AOS.init();
   }, []);
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -124,7 +123,7 @@ leading-[42px] flex flex-col items-center justify-center mx-auto "
 
                 <div
                   data-aos="fade-down"
-                  className=" font-sans text-[18px] leading-[28pz] lg:w-[490px] text-center p-[2px] my-10  w-[318px] text-zinc-100 text-lg font-normal"
+                  className=" font-sans text-[18px] leading-[28pz] lg:w-[490px] text-center p-[2px] mt-16  w-[318px] text-zinc-100 text-lg font-normal"
                 >
                   At Cwito, we ensure effortless conversion of your
                   cryptocurrencies into naira instantly.
@@ -134,7 +133,7 @@ leading-[42px] flex flex-col items-center justify-center mx-auto "
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.3 }}
-                  className="w-[259px] h-[60px] p-6 bg-white rounded-lg my-4 justify-center items-center gap-2 inline-flex border-0 "
+                  className="w-[259px] h-[60px] p-6 bg-white rounded-lg my-10 justify-center items-center gap-2 inline-flex border-0 "
                 >
                   <div className="justify-center items-center flex">
                     <Link
@@ -152,9 +151,9 @@ leading-[42px] flex flex-col items-center justify-center mx-auto "
                   Create a free account
                 </Link>
               </div>
-              <div className="w-full bg-[#023436] backdrop-filter backdrop-blur-lg   ">
+              <div className="w-full heroNum backdrop-filter backdrop-blur-lg   ">
                 <div className="flex justify-center items-center py-36 ">
-                  <div className=" grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-x-24 gap-y-6 p-2">
+                  <div className=" grid lg:grid-cols-4 text-center md:grid-cols-2 sm:grid-cols-1 gap-x-24 gap-y-6 p-2">
                     <div className="">
                       <p
                         data-aos="fade-right"
@@ -235,7 +234,7 @@ text-[21px] font-normal leading-[27px]"
             className="w-auto"
           />
         </div>
-        <div className="bg-emerald-50 bg-opacity-25 py-44 px-5   ">
+        <div className="bg-emerald-50 bg-opacity-25 pt-44 pb-16 px-5  bg">
           <div className="flex lg:flex-row flex-col items-center justify-center container mx-auto">
             <motion.div
               variants={fadeIn("down", 0.3)}
@@ -333,8 +332,8 @@ text-[21px] font-normal leading-[27px]"
             </div>
           </div>
 
-          <div className="items-center justify-center container flex lg:flex-row flex-col ">
-            <div className="flex lg:flex-row flex-col  w-fit  justify-center items-center mx-auto container bg-emerald-50 bg-opacity-25  ">
+          <div className="items-center justify-center container my-16 flex lg:flex-row flex-col ">
+            <div className="flex lg:flex-row flex-col  w-fit  justify-center items-center mx-auto container bg-emerald-50 bg-opacity-25 p-0  lg:p-10">
               <div className=" my-5 lg:m-6 m-0 w-full lg:w-auto ">
                 <motion.div
                   variants={fadeIn("down", 0.3)}
@@ -513,13 +512,11 @@ text-[21px] font-normal leading-[27px]"
             </footer>
 
             <div
-            data-aos="fade-down"
-            className="flex items-center justify-between mx-0 mt-5 lg:mx-7">
+              data-aos="fade-down"
+              className="flex items-center justify-between mx-0 mt-5 lg:mx-7"
+            >
               <p className="">
-                <Link
-                  className="lg:mx-3 lg:flex hidden  mx-0  my-4"
-                  href="/"
-                >
+                <Link className="lg:mx-3 lg:flex hidden  mx-0  my-4" href="/">
                   <Image
                     src="/imgs/logoSm.svg"
                     width={200}

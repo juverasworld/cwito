@@ -26,42 +26,61 @@ font-style: normal;
   src: local('Inter Regular'), local('Inter-Regular'), url('/font//inter/Inter-Regular.ttf') format('ttf');
 }
 
+.bg {
+  background-image: linear-gradient(to right, white, rgba(230, 246, 245, 0.26), white, white);
+  /* background: linear-gradient(to right, transparent, transparent 10%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.9) 90%, transparent 90%, transparent); */
+}
+
 nav {
   z-index: 1;
   background: #ECECEC;
   font-family: inter;
   font-weight: 400;
 }
-.footer{
+
+.footer {
   /* background-color: purple; */
 }
-::placeholder{
+
+::placeholder {
   font-family: "Work Sans";
   padding: 10px;
   padding-left: 10px;
   color: #fff;
 }
-.input-button{
+
+.input-button {
   position: absolute;
   right: 4px;
   width: 133.48px;
   height: 38px;
+  border-radius: 3px;
+  border: 1px solid #3C9541;
+  background: #E6F6F5;
   top: 5px;
   color: #023436
-
 }
-.input{
-  width: 300px;
+
+.input {
+  width: 350px;
   height: 48px;
   background: transparent;
-  
+
 }
-.inputSm{
-  width:100%;
-  background: linear-gradient( to right, #023436, #3C9541);
+
+.inputSm {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  background: radial-gradient(228.83% 108.71% at -22.65% 12.33%, rgba(0, 230, 118, 0.16) 0%, rgba(108, 99, 255, 0.08) 21.97%, rgba(0, 230, 118, 0.03) 98.44%);
   height: 48px;
   /* background: transparent; */
-  
+
+}
+
+heroNum {
+
+  background-image: linear-gradient(to bottom, #023436, white, #fff, #023436, );
 }
 
 
@@ -73,16 +92,21 @@ nav {
 
 
 }
-.dd{
-justify-content: space-evenly;
-width: 450px;
+
+.dd {
+  justify-content: space-evenly;
+  width: 450px;
 
 }
-Link{
+
+Link {
   /* margin: 10px; */
 }
-.fit{
-  background: linear-gradient( to right, #023436, #3C9541);
+
+.fit {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  background: radial-gradient(228.83% 108.71% at -22.65% 12.33%, rgba(0, 230, 118, 0.16) 0%, rgba(108, 99, 255, 0.08) 21.97%, rgba(0, 230, 118, 0.03) 98.44%);
 
 }
 
@@ -90,9 +114,11 @@ Link{
 .hero {
   padding: 24px, 32px, 24px, 32px
 }
-.fix{
+
+.fix {
   z-index: 1;
 }
+
 .containers {
   position: relative;
   white-space: nowrap;
