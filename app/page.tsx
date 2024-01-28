@@ -290,7 +290,7 @@ text-[21px] font-normal leading-[27px]"
                     Payout is faster than normal
                   </p>
 
-                  <div className="text-neutral-600 text-[18px] mt-5 font-normal font-sans leading-[27px]">
+                  <div className="text-neutral-600 text-[14px] lg:text-[18px] mt-5 font-normal font-sans leading-[27px]">
                     Palette is an enshrined protocol on the network level that
                     enables permissionless creation of marketplaces while
                     enforcing royalties.
@@ -322,7 +322,7 @@ text-[21px] font-normal leading-[27px]"
                     No hodling, Just trade!
                   </p>
 
-                  <div className="text-neutral-600 text-[18px] mt-5 font-normal font-sans leading-[27px]">
+                  <div className="text-neutral-600 text-[14px] lg:text-[18px] mt-5 font-normal font-sans leading-[27px]">
                     Palette is an enshrined protocol on the network level that
                     enables permissionless creation of marketplaces while
                     enforcing royalties.
@@ -346,7 +346,7 @@ text-[21px] font-normal leading-[27px]"
                     <div className="lg:w-[230.64px] w-full h-auto lg:h-[27px] text-black text-[24px] lg:text-[32px] font-semibold font-sans leading-[33px]">
                       Cwito in 60 seconds
                     </div>
-                    <div className="lg:w-[282px] w-full text-neutral-600 text-lg font-normal font-sans leading-7">
+                    <div className="lg:w-[282px] w-full text-neutral-600 text-[14px] lg:text-[18px] font-normal font-sans leading-7">
                       Learn about Steep and how it can change the way your
                       organization works with data.
                     </div>
@@ -405,7 +405,7 @@ text-[21px] font-normal leading-[27px]"
                     <div className="text-black   text-[24px] lg:text-[32px]  font-semibold font-sans leading-[33px]">
                       Supported Assets
                     </div>
-                    <div className="lg:w-[347px] w-full text-neutral-600 text-lg font-normal font-sans leading-7">
+                    <div className="lg:w-[347px] w-full text-neutral-600 text-[14px] lg:text-[18px] font-normal font-sans leading-7">
                       Steep supports the latest semantic API:s from dbt and
                       Cube.
                     </div>
