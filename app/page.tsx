@@ -480,16 +480,28 @@ text-[21px] font-normal leading-[27px]"
                           className=" h-[75px] w-[64px]"
                         />
                       </Link>
-                      <Link className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4" href="">
+                      <Link
+                        className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4"
+                        href=""
+                      >
                         About
                       </Link>
-                      <Link className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4" href="#speakers">
+                      <Link
+                        className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4"
+                        href="#speakers"
+                      >
                         Careers
                       </Link>
-                      <Link className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4" href="#partners">
+                      <Link
+                        className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4"
+                        href="#partners"
+                      >
                         Blog
                       </Link>
-                      <Link className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4" href="#partners">
+                      <Link
+                        className="lg:pr-10 pr-0  text-[#E5E5E5]  my-4"
+                        href="#partners"
+                      >
                         Terms and Condition
                       </Link>
                     </motion.div>
