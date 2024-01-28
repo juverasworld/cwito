@@ -24,7 +24,7 @@ export default function Home() {
     <>
       <div className=" relative z-0 overflow-hidden">
         <div className="w-full relative bg-none lg:bg-heroLg  h-auto  bg-no-repeat bg-cover">
-          <nav className="py-3  border-b-[1px] w-[100%]  z-24 text-[16px] leading-[24px] font-sans ">
+          <nav className="py-3  border-b-[1px] w-[100%] fixed z-24 text-[16px] leading-[24px] font-sans ">
             <div className="flex w-[100%] items-center justify-between md:px-24  px-2">
               <Link href="/">
                 <Image
@@ -108,7 +108,16 @@ export default function Home() {
           </nav>
 
           <div className="relative">
-            <div className="bg-heroSm lg:bg-none bg-no-repeat bg-cover  relative  md:pt-52 pt-44   ">
+            <div className="bg-heroSm relative lg:bg-none bg-no-repeat bg-cover  relative  md:pt-52 pt-44   ">
+              <div className="lg:hidden flex">
+                <Image
+                  src="/imgs/fixedbar.svg"
+                  alt=""
+                  width="500"
+                  height="100"
+                  className="w-full absolute top-[64px] bottom-[40px]  right-0"
+                />
+              </div>
               <div className=" flex items-center justify-center  flex-col ">
                 <div
                   className="font-sans xl:w-[700px] lg:w-[396px] w-auto  text-center text-white text-5xl font-semibold
