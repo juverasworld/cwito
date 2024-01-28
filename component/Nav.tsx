@@ -87,7 +87,7 @@ const NavBar = () => {
                       : " "
                   } ${
                     pathname === "/" ? "text-black" : "text-[#000]"
-                  } lg:py-[20px] py-[5%] lg:px-3 `}
+                  } lg:py-[20px] py-[5%] lg:pr-10 `}
                 >
                   {item.itemName}
                 </Link>
