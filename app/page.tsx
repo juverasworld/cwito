@@ -154,7 +154,7 @@ text-[21px] font-normal leading-[27px]"
             </div>
           </div>
         </div>
-        <div className="fixed top-[80%] bottom-[50%] right-[3%] fix">
+        <div className="fixed top-[80%] bottom-[50%] right-[3%] fix md:flex hidden">
           <Image
             src="/imgs/chatbox.svg"
             alt=""
